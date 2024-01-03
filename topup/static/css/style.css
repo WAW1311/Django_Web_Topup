@@ -1,0 +1,36 @@
+body {
+    font-family:'Franklin Gothic Medium';
+    background-color: rgb(212, 229, 255);
+}
+.nav-link:hover{
+    text-decoration-line: underline;
+    background-color:rgba(212, 229, 255, 0.178);
+    transition: 0.4s ease-in-out;
+}
+.active {
+    text-decoration-line: underline;
+    background-color:rgba(212, 229, 255, 0.178);
+}
+.card-hover {
+    width: 10rem;
+    transition: background-color 0.3s ease-in-out;
+}
+.card-hover:hover:not(.card-clicked) {
+    background-color: rgb(211, 211, 211);
+}
+.card-clicked {
+    background-color: rgb(163, 163, 163);
+}
+.card {
+    width: 20rem;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.button {
+    font-size: 10px;
+}

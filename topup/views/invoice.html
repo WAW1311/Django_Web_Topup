@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="card mx-auto mt-5" style="width: 18rem;">
+        <div class="card-header text-center text-white fw-bold bg-primary">
+            Invoice
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item fw-bold">Order ID : {{product.order_id}}</li>
+            <li class="list-group-item fw-bold">Produk : {{ product.category }} {{product.name}}</li>
+            <li class="list-group-item fw-bold">Harga : {{product.price}}</li>
+            <li class="list-group-item fw-bold">Jumlah : {{product.quantity}}</li>
+            <li class="list-group-item fw-bold">Status Pembayaran : <button type="button" class="btn btn-success" style="cursor:none">{{ product.status }}</button></li>
+            <div class="card-header text-center fw-bold bg-primary text-white">
+                Informasi Akun
+            </div>
+            <li class="list-group-item fw-bold">User ID : {{ product.user_id }}</li>
+            <li class="list-group-item fw-bold">Server ID : {{ product.server_id }}</li>
+        </ul>
+    </div>
+{% endblock %}
